@@ -1,0 +1,25 @@
+.btn {
+	display: inline-block;
+	vertical-align: top; 
+	padding: 15px 15px;
+	min-width: 250px;
+	border-radius: 6px;
+	border: none;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 14px;
+}
+
+.btn-primary {
+	background: $blue;
+	&:hover {
+		background: #1e8cf9;
+	}
+}
+.btn-default {
+	background: #bcbec0;
+	&:hover {
+		background: #8d8e8f;
+		color: #fff;
+	}
+}

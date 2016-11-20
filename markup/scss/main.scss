@@ -1,0 +1,133 @@
+
+$breakpoints: (
+	'screen-xs': 480px,
+	'screen-sm': 768px,
+	'screen-md': 992px,
+	'screen-lg': 1200px
+);
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'base/include-media';
+
+@import "bootstrap-custom";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import 'base/mixins';
+@import 'base/helpers';
+
+@import "buttons";
+
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.logo-block {
+	padding: 50px 0 0;
+	text-align: center;
+	.logo {
+		margin: 0 0 25px;
+		img {
+			max-width: 100%;
+			height: auto;
+			vertical-align: top;
+		}
+	}
+	.title-logo {
+		font-size: $font-size-h1;
+		text-transform: uppercase;
+		margin: 0 0 15px;
+		h1 {
+			color: $text-color;
+			font-weight: 700;
+		}
+	}
+}
+.title {
+	text-align: center;
+	h2 {
+		font-size: 30px;
+		color: $text-color;
+	}
+}
+.authorization-block {
+	padding: 50px 0 0;
+}
+.form-horizontal {
+	label {
+		font-weight: 400;
+		padding-right: 0;
+	}
+	input {
+		border: none;
+	}
+}
+
+.forgot-create {
+	position: relative;
+	padding-left: 8px;
+	font-size: 13px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 41.5%;
+		width: 1px;
+		height: 12px;
+		background: #bcc2d6;
+	}
+	a {
+		text-decoration: underline;
+		margin: 0 15px 0 0;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.create-account-block {
+	padding: 80px 0 0;
+	.form-group:last-child {
+		margin: 0 0 50px;
+	}
+}
+.verify-account-block {
+	padding: 80px 0 0;
+	.title {
+		margin: 0 0 60px;
+	}
+	p {
+		display: block;
+		margin: 0 0 15px;
+		&:last-child {
+			margin: 0 0 50px;
+		}
+	}
+	.btn-box {
+		margin: 0 0 80px;
+		button {
+			margin: 0 10px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	.checkbox {
+		font-size: 11px;
+		input[type="checkbox"] {
+			top: 3px;
+		}
+	}
+}

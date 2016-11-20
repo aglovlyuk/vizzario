@@ -1,0 +1,218 @@
+.clearfix:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.ellipsis
+{
+    overflow: hidden;
+
+    white-space: nowrap; /* 1 */
+    text-overflow: ellipsis; /* 2 */
+}
+
+.btn
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    min-width: 250px;
+    padding: 15px 15px;
+
+    vertical-align: top;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-primary
+{
+    background: #8ec0f2;
+}
+
+.btn-primary:hover
+{
+    background: #1e8cf9;
+}
+
+.btn-default
+{
+    background: #bcbec0;
+}
+
+.btn-default:hover
+{
+    color: #fff;
+    background: #8d8e8f;
+}
+
+#wrapper
+{
+    position: relative;
+
+    overflow: hidden;
+}
+
+.logo-block
+{
+    padding: 50px 0 0;
+
+    text-align: center;
+}
+
+.logo-block .logo
+{
+    margin: 0 0 25px;
+}
+
+.logo-block .logo img
+{
+    max-width: 100%;
+    height: auto;
+
+    vertical-align: top;
+}
+
+.logo-block .title-logo
+{
+    font-size: 48px;
+
+    margin: 0 0 15px;
+
+    text-transform: uppercase;
+}
+
+.logo-block .title-logo h1
+{
+    font-weight: 700;
+
+    color: #000;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.title h2
+{
+    font-size: 30px;
+
+    color: #000;
+}
+
+.authorization-block
+{
+    padding: 50px 0 0;
+}
+
+.form-horizontal label
+{
+    font-weight: 400;
+
+    padding-right: 0;
+}
+
+.form-horizontal input
+{
+    border: none;
+}
+
+.forgot-create
+{
+    font-size: 13px;
+
+    position: relative;
+
+    padding-left: 8px;
+}
+
+.forgot-create:before
+{
+    position: absolute;
+    top: 3px;
+    left: 41.5%;
+
+    width: 1px;
+    height: 12px;
+
+    content: '';
+
+    background: #bcc2d6;
+}
+
+.forgot-create a
+{
+    margin: 0 15px 0 0;
+
+    text-decoration: underline;
+}
+
+.forgot-create a:hover
+{
+    text-decoration: none;
+}
+
+.create-account-block
+{
+    padding: 80px 0 0;
+}
+
+.create-account-block .form-group:last-child
+{
+    margin: 0 0 50px;
+}
+
+.verify-account-block
+{
+    padding: 80px 0 0;
+}
+
+.verify-account-block .title
+{
+    margin: 0 0 60px;
+}
+
+.verify-account-block p
+{
+    display: block;
+
+    margin: 0 0 15px;
+}
+
+.verify-account-block p:last-child
+{
+    margin: 0 0 50px;
+}
+
+.verify-account-block .btn-box
+{
+    margin: 0 0 80px;
+}
+
+.verify-account-block .btn-box button
+{
+    margin: 0 10px;
+}
+
+.verify-account-block .btn-box button:last-child
+{
+    margin: 0;
+}
+
+.verify-account-block .checkbox
+{
+    font-size: 11px;
+}
+
+.verify-account-block .checkbox input[type='checkbox']
+{
+    top: 3px;
+}
+
