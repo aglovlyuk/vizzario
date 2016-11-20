@@ -1,247 +1,472 @@
-.account-list, .sidebar .list-button {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+.account-list,
+.sidebar .list-button
+{
+    margin: 0;
+    padding: 0;
 
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both; }
+    list-style: none;
+}
 
-.ellipsis {
-  white-space: nowrap;
-  /* 1 */
-  text-overflow: ellipsis;
-  /* 2 */
-  overflow: hidden; }
+.clearfix:after
+{
+    display: table;
+    clear: both;
 
-.btn {
-  display: inline-block;
-  vertical-align: top;
-  padding: 12px 15px;
-  border-radius: 6px;
-  border: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-          transition: all 0.2s ease-in-out 0s;
-  outline: none !important; }
+    content: '';
+}
 
-.btn-primary {
-  width: 215px;
-  background: #8ec0f2; }
-  .btn-primary:hover {
-    background: #1e8cf9; }
+.ellipsis
+{
+    overflow: hidden;
 
-.btn-default {
-  width: 215px;
-  background: #bcbec0; }
-  .btn-default:hover {
-    background: #8d8e8f;
-    color: #fff; }
+    white-space: nowrap; /* 1 */
+    text-overflow: ellipsis; /* 2 */
+}
 
-.btn-sidebar-blue {
-  background: #8ec0f2; }
-  .btn-sidebar-blue:hover {
-    background: #1e8cf9;
-    color: #fff; }
+.btn
+{
+    font-size: 13px;
+    font-weight: 700;
 
-.btn-sidebar-grey {
-  color: #bcbec0;
-  background: #f8f8f8; }
-  .btn-sidebar-grey:hover {
-    background: #8d8e8f;
-    color: #fff; }
-
-h1, h2 {
-  margin: 0;
-  font-weight: 700; }
-
-.container-small {
-  max-width: 600px;
-  margin: 0 auto; }
-
-.logo-block {
-  padding: 60px 0 0;
-  text-align: center; }
-  .logo-block .logo {
-    margin: 0 0 30px; }
-    .logo-block .logo img {
-      vertical-align: top;
-      max-width: 200px;
-      max-height: 137px; }
-  .logo-block .title-logo {
-    font-size: 36px;
-    text-transform: uppercase;
-    margin: 0 0 11px; }
-    .logo-block .title-logo h1 {
-      color: #67687f;
-      font-size: 36px; }
-
-.title {
-  text-align: center;
-  margin: 0 0 78px; }
-  .title h2 {
-    color: #67687f;
-    font-size: 23px;
-    font-weight: 400; }
-
-.authorization-block {
-  padding: 89px 0 0; }
-
-.form-horizontal .form-group {
-  margin-bottom: 11px; }
-
-.form-horizontal .input-holder {
-  max-width: 245px; }
-
-.form-horizontal .label-holder {
-  margin: 0 0 0 36px; }
-
-.form-horizontal label {
-  font-weight: 400;
-  padding-right: 0; }
-
-.form-horizontal input {
-  border: none; }
-
-.form-horizontal .btn-create {
-  padding: 96px 0 0; }
-
-.form-horizontal button {
-  margin: 0 0 0 50px; }
-
-.account-list {
-  position: relative;
-  font-size: 13px;
-  margin: 0 0 0 36px; }
-  .account-list li {
-    margin: 0 7px 0 0;
     display: inline-block;
-    vertical-align: top; }
-    .account-list li:before {
-      content: '';
-      position: absolute;
-      top: 7px;
-      left: 31.5%;
-      width: 1px;
-      height: 9px;
-      background: #bcc2d6; }
-  .account-list a {
+
+    padding: 12px 15px;
+
+    -webkit-transition: all .2s ease-in-out 0s;
+            transition: all .2s ease-in-out 0s;
+    vertical-align: top;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none !important;
+}
+
+.btn-primary
+{
+    width: 215px;
+
+    background: #8ec0f2;
+}
+
+.btn-primary:hover
+{
+    background: #1e8cf9;
+}
+
+.btn-default
+{
+    width: 215px;
+
+    background: #bcbec0;
+}
+
+.btn-default:hover
+{
+    color: #fff;
+    background: #8d8e8f;
+}
+
+.btn-sidebar-blue
+{
+    background: #8ec0f2;
+}
+
+.btn-sidebar-blue:hover
+{
+    color: #fff;
+    background: #1e8cf9;
+}
+
+.btn-sidebar-grey
+{
+    color: #bcbec0;
+    background: #f8f8f8;
+}
+
+.btn-sidebar-grey:hover
+{
+    color: #fff;
+    background: #8d8e8f;
+}
+
+h1,
+h2
+{
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.container-small
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo-block
+{
+    padding: 60px 0 0;
+
+    text-align: center;
+}
+
+.logo-block .logo
+{
+    margin: 0 0 30px;
+}
+
+.logo-block .logo img
+{
+    max-width: 200px;
+    max-height: 137px;
+
+    vertical-align: top;
+}
+
+.logo-block .title-logo
+{
+    font-size: 36px;
+
+    margin: 0 0 11px;
+
+    text-transform: uppercase;
+}
+
+.logo-block .title-logo h1
+{
+    font-size: 36px;
+
+    color: #67687f;
+}
+
+.title
+{
+    margin: 0 0 78px;
+
+    text-align: center;
+}
+
+.title h2
+{
+    font-size: 23px;
+    font-weight: 400;
+
+    color: #67687f;
+}
+
+.authorization-block
+{
+    padding: 89px 0 0;
+}
+
+.form-horizontal .form-group
+{
+    margin-bottom: 11px;
+}
+
+.form-horizontal .input-holder
+{
+    max-width: 245px;
+}
+
+.form-horizontal .label-holder
+{
+    margin: 0 0 0 36px;
+}
+
+.form-horizontal label
+{
+    font-weight: 400;
+
+    padding-right: 0;
+}
+
+.form-horizontal input
+{
+    border: none;
+}
+
+.form-horizontal .btn-create
+{
+    padding: 96px 0 0;
+}
+
+.form-horizontal button
+{
+    margin: 0 0 0 50px;
+}
+
+.account-list
+{
+    font-size: 13px;
+
+    position: relative;
+
+    margin: 0 0 0 36px;
+}
+
+.account-list li
+{
+    display: inline-block;
+
+    margin: 0 7px 0 0;
+
+    vertical-align: top;
+}
+
+.account-list li:before
+{
+    position: absolute;
+    top: 7px;
+    left: 35.5%;
+
+    width: 1px;
+    height: 9px;
+
+    content: '';
+
+    background: #bcc2d6;
+}
+
+.account-list a
+{
     font-size: 10px;
     font-weight: 700;
-    text-decoration: underline; }
-    .account-list a:hover {
-      text-decoration: none; }
 
-.create-account-block {
-  padding: 80px 0 0; }
-  .create-account-block .title {
-    margin: 0 0 70px; }
+    text-decoration: underline;
+}
 
-.verify-account-block {
-  padding: 80px 0 0; }
-  .verify-account-block .title {
-    margin: 0 0 70px; }
-  .verify-account-block .text-block {
-    margin: 0 0 65px; }
-    .verify-account-block .text-block p {
-      display: block;
-      margin: 0 0 19px; }
-      .verify-account-block .text-block p:last-child {
-        margin: 0; }
-  .verify-account-block .checkbox {
-    font-size: 11px; }
-    .verify-account-block .checkbox input[type="checkbox"] {
-      top: 3px; }
-  .verify-account-block .block-alt {
-    padding: 80px 0 40px; }
-    .verify-account-block .block-alt .text-block {
-      text-align: center;
-      margin: 0 0 53px; }
-    .verify-account-block .block-alt .btn-verify {
-      padding: 40px 0 0 0;
-      margin-bottom: 8px; }
-    .verify-account-block .block-alt .checkbox {
-      margin: 0 0 0 36px; }
+.account-list a:hover
+{
+    text-decoration: none;
+}
 
-.sidebar {
-  padding: 30px 30px 0;
-  background: #fff; }
-  .sidebar .sidebar-block {
-    margin: 0 0 410px; }
-    .sidebar .sidebar-block:nth-child(2) {
-      margin: 0 0 100px; }
-  .sidebar .user-block {
-    font-size: 0;
-    margin: 0 0 80px; }
-  .sidebar .img-holder,
-  .sidebar .text-block {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 18px;
-    text-align: center; }
-  .sidebar .text-block {
-    padding: 0 0 0 25px; }
-  .sidebar .name {
+.create-account-block
+{
+    padding: 80px 0 0;
+}
+
+.create-account-block .title
+{
+    margin: 0 0 70px;
+}
+
+.verify-account-block
+{
+    padding: 80px 0 0;
+}
+
+.verify-account-block .title
+{
+    margin: 0 0 70px;
+}
+
+.verify-account-block .text-block
+{
+    margin: 0 0 65px;
+}
+
+.verify-account-block .text-block p
+{
     display: block;
-    line-height: 30px; }
-  .sidebar .account-list {
+
+    margin: 0 0 19px;
+}
+
+.verify-account-block .text-block p:last-child
+{
+    margin: 0;
+}
+
+.verify-account-block .checkbox
+{
     font-size: 11px;
-    line-height: 16px; }
-    .sidebar .account-list:before {
-      left: 48.5%; }
-  .sidebar .object {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0 0 20px; }
-  .sidebar .list-button li {
-    display: inline-block;
-    vertical-align: top; }
-  .sidebar .list-button button {
-    margin: 0 0 5px;
-    font-weight: 700;
-    font-size: 12px; }
+}
 
-.main {
-  padding: 30px 0 0 30px; }
-  .main .title-block {
-    margin: 0 0 50px; }
-    .main .title-block h1 {
-      font-size: 20px;
-      color: #67687f;
-      margin: 0 0 30px;
-      text-align: left; }
-  .main .more-info {
-    position: relative;
-    max-width: 345px;
+.verify-account-block .checkbox input[type='checkbox']
+{
+    top: 3px;
+}
+
+.verify-account-block .block-alt
+{
+    padding: 80px 0 40px;
+}
+
+.verify-account-block .block-alt .text-block
+{
+    margin: 0 0 53px;
+
     text-align: center;
-    padding: 20px;
+}
+
+.verify-account-block .block-alt .btn-verify
+{
+    margin-bottom: 8px;
+    padding: 40px 0 0 0;
+}
+
+.verify-account-block .block-alt .checkbox
+{
+    margin: 0 0 0 36px;
+}
+
+.sidebar
+{
+    padding: 30px 30px 0;
+
     background: #fff;
-    margin: 0 0 50px; }
-    .main .more-info:before {
-      content: '';
-      position: absolute;
-      top: -16px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 16px solid #fff; }
-  .main .graph-block {
+}
+
+.sidebar .sidebar-block
+{
+    margin: 0 0 410px;
+}
+
+.sidebar .sidebar-block:nth-child(2)
+{
+    margin: 0 0 100px;
+}
+
+.sidebar .user-block
+{
+    font-size: 0;
+
+    margin: 0 0 80px;
+}
+
+.sidebar .img-holder,
+.sidebar .text-block
+{
+    font-size: 18px;
+
+    display: inline-block;
+
     text-align: center;
-    margin: 0 0 150px; }
-  .main .title-graph {
-    margin: 0 0 20px; }
-    .main .title-graph h2 {
-      color: #67687f;
-      font-size: 16px; }
-/*# sourceMappingURL=main.css.map */
+    vertical-align: middle;
+}
+
+.sidebar .text-block
+{
+    padding: 0 0 0 25px;
+}
+
+.sidebar .name
+{
+    line-height: 30px;
+
+    display: block;
+}
+
+.sidebar .account-list
+{
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.sidebar .account-list:before
+{
+    left: 48.5%;
+}
+
+.sidebar .object
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    display: block;
+
+    margin: 0 0 20px;
+
+    text-transform: uppercase;
+}
+
+.sidebar .list-button li
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.sidebar .list-button button
+{
+    font-size: 12px;
+    font-weight: 700;
+
+    margin: 0 0 5px;
+}
+
+.main
+{
+    padding: 30px 0 0 30px;
+}
+
+.main .title-block
+{
+    margin: 0 0 50px;
+}
+
+.main .title-block h1
+{
+    font-size: 20px;
+
+    margin: 0 0 30px;
+
+    text-align: left;
+
+    color: #67687f;
+}
+
+.main .more-info
+{
+    position: relative;
+
+    max-width: 345px;
+    margin: 0 0 50px;
+    padding: 20px;
+
+    text-align: center;
+
+    background: #fff;
+}
+
+.main .more-info:before
+{
+    position: absolute;
+    top: -16px;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #fff;
+    border-left: 8px solid transparent;
+}
+
+.main .graph-block
+{
+    margin: 0 0 150px;
+
+    text-align: center;
+}
+
+.main .title-graph
+{
+    margin: 0 0 20px;
+}
+
+.main .title-graph h2
+{
+    font-size: 16px;
+
+    color: #67687f;
+}
+
