@@ -277,7 +277,8 @@ h1, h2 {
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
       border-bottom: 16px solid #fff; }
-  .main .graph-block {
+  .main .graph-block,
+  .main .dashboard-block {
     text-align: center;
     margin: 0 0 150px; }
   .main .title-graph {
