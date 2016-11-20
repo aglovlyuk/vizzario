@@ -1,7 +1,7 @@
 // custom variables and override bootstrap variables
 
 $body-bg:						#f8f8f8;
-$purple:						#67687f;
+$purple:						#51526c;
 $white:							#fff;
 $blue:							#8ec0f2;
 $text-color:					$purple;
@@ -10,11 +10,11 @@ $text-color:					$purple;
 // color-name: http://name-of-color.com/
 
 $brand-primary:					$blue;
-$headings-color:				$brand-primary;
+//$headings-color:				$brand-primary;
 
 $font-size-base:				14px;
 $line-height-base:				1.231;
-$font-size-h1:					ceil($font-size-base * 2.571); //~36px
+$font-size-h1:					ceil($font-size-base * 2.785); //~36px
 $font-size-h2:					ceil($font-size-base * 1.642); //~23px
 $font-size-h3:					ceil($font-size-base * 1.555); //~28px
 $font-size-h4:					ceil($font-size-base * 1.111); //~20px
@@ -33,6 +33,8 @@ $input-border-radius:			6px;
 $border-radius-base:			0;
 $border-radius-large:			0;
 $border-radius-small:			0;
+$form-group-margin-bottom:		15px;
 
 $font-family-sans-serif:		'Open Sans', Arial, sans-serif;
 $headings-font-family:			$font-family-sans-serif;
+$headings-font-weight: 			400;

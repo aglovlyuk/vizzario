@@ -30,144 +30,182 @@ $media-expressions: (
 @import "buttons";
 
 
-h1,h2{margin: 0; font-weight: 700;}
+h1,h2{margin: 0;}
 
 .container-small {
 	max-width: 600px;
 	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.logo-block {
-	padding: 60px 0 0;
+/*Start logo block*/
+.logo {
+	padding-top: 60px;
 	text-align: center;
-	.logo {
-		margin: 0 0 30px;
+	&__image {
+		margin-bottom: 29px;
 		img {
 			vertical-align: top;
 			max-width: 200px;
 			max-height: 137px;
 		}
 	}
-	.title-logo {
+	&__title {
+		color: $text-color;
 		font-size: $font-size-h1;
 		text-transform: uppercase;
-		margin: 0 0 11px;
-		h1 {
-			color: $text-color;
-			font-size: $font-size-h1;
+		margin: 0 0 78px;
+		font-weight: 700;
+		small {
+			text-transform: none;
+			font-size: $font-size-h2;
+			font-weight: 400;
+			display: block;
+			margin-top: 9px;
+			color: inherit;
 		}
 	}
 }
-.title {
-	text-align: center;
-	margin: 0 0 78px;
-	h2 {
-		color: $text-color;
-		font-size: $font-size-h2;
-		font-weight: 400;
-	}
-}
-.authorization-block {
-	padding: 89px 0 0;
+
+/*Start authorization block*/
+.authorization {
+	padding-top: 12px;
 }
 .form-horizontal {
-	.form-group {
-		margin-bottom: 11px; 
-	}
-	.input-holder {
-		max-width: 245px;
-	}
-	.label-holder {
-		margin: 0 0 0 36px;
-	}
 	label {
 		font-weight: 400;
 		padding-right: 0;
 	}
-	input {
-		border: none;
+	.captcha {
+		margin-bottom: 28px;
 	}
-	.btn-create {
-		padding: 96px 0 0;
-	}
-	button {
-		margin: 0 0 0 50px;
-	}
+}
+.form-control {
+	border: 0;
+	height: 29px;
 }
 
 .account-list {
 	@extend %listreset;
 	position: relative;
 	font-size: 13px;
-	margin: 0 0 0 36px;
+	text-align: center;
 	li {
-		margin: 0 7px 0 0;
+		margin-right: 7px;
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 		&:before {
 			content: '';
-			position: absolute;
-			top: 7px;
-			left: 35.5%;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 7px;
 			width: 1px;
 			height: 9px;
 			background: #bcc2d6;
 		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
 	}
 	a {
 		font-size: 10px;
-		font-weight: 700;
 		text-decoration: underline;
 		&:hover {
 			text-decoration: none;
 		}
 	}
 }
-.create-account-block {
-	padding: 80px 0 0;
+
+/*Start Create account block*/
+.create-account {
+	padding-top: 80px;
 	.title {
-		margin: 0 0 70px;
+		margin-bottom: 70px;
 	}
 }
 
-.verify-account-block {
-	padding: 80px 0 0;
+/*Start Verify Account block*/
+.verify-account {
+	padding-top: 80px;
 	.title {
-		margin: 0 0 70px;
+		margin-bottom: 70px;
 	}
 	.text-block {
-		margin: 0 0 65px;
+		margin-bottom: 65px;
 		p {
-			display: block;
 			margin: 0 0 19px;
 			&:last-child {
 				margin: 0;
 			}
 		}
 	}
-	.checkbox {
-		font-size: 11px;
-		input[type="checkbox"] {
-			top: 3px;
-		}
-	}
-	.block-alt {
-		padding: 80px 0 40px;
+	.verify-account__block {
+		padding-top: 70px;
+		padding-bottom: 40px;
 		.text-block {
-			text-align: center;
-			margin: 0 0 53px;
+			margin-bottom: 53px;
 		}
 		.btn-verify {
-			padding: 40px 0 0 0;
+			padding-top: 40px;
 			margin-bottom: 8px;
 		}
-		.checkbox {
-			margin: 0 0 0 36px;
+	}
+	.btns-control {
+		.btn{
+			margin-bottom: 15px;
 		}
 	}
 }
 
+.custom-checkbox {
+	padding-top: 15px;
+	font-size: 11px;
+	input[type="checkbox"] {
+		position: absolute;
+		visibility: hidden;
+		&:checked + label {
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	label {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 21px;
+		&:before {
+			@include ycenter;
+			content: '';
+			width: 10px;
+			height: 10px;
+			left: 0;
+			display: inline-block;
+			vertical-align: middle;
+			border: 1px solid #c0c2c4;
+		}
+		&:after {
+			@include ycenter;
+			@include anim($dur: .1s);
+			content: '';
+			visibility: hidden;
+			opacity: 0;
+			background: url(../images/icons.png) no-repeat;
+			background-size: cover;
+			width: 9px;
+			height: 7px;
+			left: 2px;
+			margin-top: -2px;
+		}
+	}
+}
+/*Side panel*/
 .sidebar {
+	position: fixed;
 	padding: 30px 30px 0;
 	background: $white;
 	.sidebar-block {
@@ -196,11 +234,14 @@ h1,h2{margin: 0; font-weight: 700;}
 
 	}
 	.account-list {
-		font-size: 11px;
+		font-size: 0;
 		line-height: 16px;
-
+		margin: 0;
 		&:before {
 			left: 48.5%;
+		}
+		a {
+			font-size: 11px;
 		}
 	}
 	.object {
@@ -211,6 +252,7 @@ h1,h2{margin: 0; font-weight: 700;}
 		margin: 0 0 20px;
 	}
 	.list-button {
+		margin: 0 0 20px;
 		@extend %listreset;
 		li {
 			display: inline-block;
@@ -224,14 +266,20 @@ h1,h2{margin: 0; font-weight: 700;}
 	}
 }
 
+/*main content*/
+
 .main {
-	padding: 30px 0 0 30px;
+	padding: 30px 0 0 35px;
 	.title-block {
+		display: block;
 		margin: 0 0 50px;
+	}
+	.title {
+		text-align: left;
+		margin: 0 0 30px;
 		h1 {
 			font-size: 20px;
-			color: $purple;
-			margin: 0 0 30px;
+			color: $text-color;
 			text-align: left;
 		}
 	}
@@ -262,9 +310,90 @@ h1,h2{margin: 0; font-weight: 700;}
 	.title-graph {
 		margin: 0 0 20px;
 		h2 {
-			color: $purple;
+			color: $text-color;
 			font-size: 16px;
 		}
-
+	}
+}
+.dashboard-holder {
+	padding: 15px 15px 30px 30px;
+	background: $white;
+	border-radius: 1px solid #d0d2d3;
+	text-align: left;
+	.object,
+	.object-alt,
+	.object-list {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin: 0 0 15px;
+	}
+	.object-alt {
+		position: relative;
+		&:before {
+			content: '';
+			@include ycenter;
+			right: -15px;
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 8px solid #000;
+		}
+	}
+	.object-list {
+		padding: 0 0 0 23px;
+		margin: 0 0 5px;
+	}
+	.number-graph {
+		font-size: 18px;
+		color: $text-color;
+	}
+	.three-col {
+		@extend %clearfix;
+		padding: 100px 0 0;
+		margin: 0 0 15px;
+	}
+	.col {
+		padding: 80px 15px 0;
+		text-align: center;
+	}
+	.graph-list {
+		@extend %listreset;
+		text-align: left;
+		li {
+			position: relative;
+			margin: 0 0 15px;
+			text-transform: uppercase;
+			font-weight: 700;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 7px;
+				left: -27px;
+				width: 20px;
+				height: 4px;
+				background: #8de3dc;
+			}
+			&:nth-child(2) {
+				&:before {
+					background: #f4b5a2;
+				}
+			}
+			&:nth-child(3) {
+				&:before {
+					background: #f49db7;
+				}
+			}
+		}
+	}
+	.btn-box{
+		padding: 70px 0 50px;
+		.btn-vpi {
+			padding: 0 0 15px;
+		}
+		.text-block {
+			padding: 60px 0 20px;
+		}
 	}
 }
