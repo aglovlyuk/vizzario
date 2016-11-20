@@ -1,23 +1,42 @@
 .btn {
 	display: inline-block;
 	vertical-align: top; 
-	padding: 15px 15px;
-	min-width: 250px;
+	padding: 12px 15px;
 	border-radius: 6px;
 	border: none;
 	text-transform: uppercase;
 	color: $white;
-	font-size: 14px;
+	font-size: 13px;
+	font-weight: 700;
+	@include anim;
+	outline: none !important;
 }
 
 .btn-primary {
+	width: 215px;
 	background: $blue;
 	&:hover {
 		background: #1e8cf9;
 	}
 }
 .btn-default {
+	width: 215px;
 	background: #bcbec0;
+	&:hover {
+		background: #8d8e8f;
+		color: #fff;
+	}
+}
+.btn-sidebar-blue {
+	background: $blue;
+	&:hover {
+		background: #1e8cf9;
+		color: #fff;
+	}
+}
+.btn-sidebar-grey {
+	color: #bcbec0;
+	background: #f8f8f8;
 	&:hover {
 		background: #8d8e8f;
 		color: #fff;

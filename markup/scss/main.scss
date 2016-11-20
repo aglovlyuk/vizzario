@@ -30,43 +30,56 @@ $media-expressions: (
 @import "buttons";
 
 
-#wrapper {
-	position: relative;
-	overflow: hidden;
+h1,h2{margin: 0; font-weight: 700;}
+
+.container-small {
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .logo-block {
-	padding: 50px 0 0;
+	padding: 60px 0 0;
 	text-align: center;
 	.logo {
-		margin: 0 0 25px;
+		margin: 0 0 30px;
 		img {
-			max-width: 100%;
-			height: auto;
 			vertical-align: top;
+			max-width: 200px;
+			max-height: 137px;
 		}
 	}
 	.title-logo {
 		font-size: $font-size-h1;
 		text-transform: uppercase;
-		margin: 0 0 15px;
+		margin: 0 0 11px;
 		h1 {
 			color: $text-color;
-			font-weight: 700;
+			font-size: $font-size-h1;
 		}
 	}
 }
 .title {
 	text-align: center;
+	margin: 0 0 78px;
 	h2 {
-		font-size: 30px;
 		color: $text-color;
+		font-size: $font-size-h2;
+		font-weight: 400;
 	}
 }
 .authorization-block {
-	padding: 50px 0 0;
+	padding: 89px 0 0;
 }
 .form-horizontal {
+	.form-group {
+		margin-bottom: 11px; 
+	}
+	.input-holder {
+		max-width: 245px;
+	}
+	.label-holder {
+		margin: 0 0 0 36px;
+	}
 	label {
 		font-weight: 400;
 		padding-right: 0;
@@ -74,24 +87,37 @@ $media-expressions: (
 	input {
 		border: none;
 	}
+	.btn-create {
+		padding: 96px 0 0;
+	}
+	button {
+		margin: 0 0 0 50px;
+	}
 }
 
-.forgot-create {
+.account-list {
+	@extend %listreset;
 	position: relative;
-	padding-left: 8px;
 	font-size: 13px;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 3px;
-		left: 41.5%;
-		width: 1px;
-		height: 12px;
-		background: #bcc2d6;
+	margin: 0 0 0 36px;
+	li {
+		margin: 0 7px 0 0;
+		display: inline-block;
+		vertical-align: top;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 31.5%;
+			width: 1px;
+			height: 9px;
+			background: #bcc2d6;
+		}
 	}
 	a {
+		font-size: 10px;
+		font-weight: 700;
 		text-decoration: underline;
-		margin: 0 15px 0 0;
 		&:hover {
 			text-decoration: none;
 		}
@@ -99,26 +125,21 @@ $media-expressions: (
 }
 .create-account-block {
 	padding: 80px 0 0;
-	.form-group:last-child {
-		margin: 0 0 50px;
+	.title {
+		margin: 0 0 70px;
 	}
 }
+
 .verify-account-block {
 	padding: 80px 0 0;
 	.title {
-		margin: 0 0 60px;
+		margin: 0 0 70px;
 	}
-	p {
-		display: block;
-		margin: 0 0 15px;
-		&:last-child {
-			margin: 0 0 50px;
-		}
-	}
-	.btn-box {
-		margin: 0 0 80px;
-		button {
-			margin: 0 10px;
+	.text-block {
+		margin: 0 0 65px;
+		p {
+			display: block;
+			margin: 0 0 19px;
 			&:last-child {
 				margin: 0;
 			}
@@ -129,5 +150,121 @@ $media-expressions: (
 		input[type="checkbox"] {
 			top: 3px;
 		}
+	}
+	.block-alt {
+		padding: 80px 0 40px;
+		.text-block {
+			text-align: center;
+			margin: 0 0 53px;
+		}
+		.btn-verify {
+			padding: 40px 0 0 0;
+			margin-bottom: 8px;
+		}
+		.checkbox {
+			margin: 0 0 0 36px;
+		}
+	}
+}
+
+.sidebar {
+	padding: 30px 30px 0;
+	background: $white;
+	.sidebar-block {
+		margin: 0 0 410px;
+		&:nth-child(2) {
+			margin: 0 0 100px;
+		}
+	}
+	.user-block {
+		font-size: 0;
+		margin: 0 0 80px;
+	}
+	.img-holder,
+	.text-block {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 18px;
+		text-align: center;
+	}
+	.text-block {
+		padding: 0 0 0 25px;
+	}
+	.name {
+		display: block;
+		line-height: 30px;
+
+	}
+	.account-list {
+		font-size: 11px;
+		line-height: 16px;
+
+		&:before {
+			left: 48.5%;
+		}
+	}
+	.object {
+		display: block;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 18px;
+		margin: 0 0 20px;
+	}
+	.list-button {
+		@extend %listreset;
+		li {
+			display: inline-block;
+			vertical-align: top;
+		}
+		button {
+			margin: 0 0 5px;
+			font-weight: 700;
+			font-size: 12px;
+		}
+	}
+}
+
+.main {
+	padding: 30px 0 0 30px;
+	.title-block {
+		margin: 0 0 50px;
+		h1 {
+			font-size: 20px;
+			color: $purple;
+			margin: 0 0 30px;
+			text-align: left;
+		}
+	}
+	.more-info {
+		position: relative;
+		max-width: 345px;
+		text-align: center;
+		padding: 20px;
+		background: $white;
+		margin: 0 0 50px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -16px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 16px solid #fff;
+		}
+	}
+	.graph-block {
+		text-align: center;
+		margin: 0 0 150px;
+	}
+	.title-graph {
+		margin: 0 0 20px;
+		h2 {
+			color: $purple;
+			font-size: 16px;
+		}
+
 	}
 }

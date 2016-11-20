@@ -1,1 +1,34 @@
-<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"><title>Symbol</title><g transform="translate(227 227)" fill="none" fill-rule="evenodd"><ellipse fill="#FF7C56" opacity=".5" style="mix-blend-mode:multiply" cx="72.388" cy="73.001" rx="72.388" ry="47.413"/><path d="M105.914 106.527c28.27-28.27 36.176-66.197 17.66-84.713-18.515-18.516-56.442-10.61-84.712 17.66-28.27 28.27-36.176 66.197-17.66 84.713 18.516 18.516 56.443 10.61 84.712-17.66z" fill="#FF4B83" opacity=".5" style="mix-blend-mode:multiply"/><path d="M38.862 106.527c28.27 28.27 66.197 36.176 84.713 17.66 18.515-18.516 10.61-56.443-17.66-84.712-28.27-28.27-66.197-36.177-84.713-17.66-18.516 18.515-10.61 56.442 17.66 84.712z" fill="#23D3C4" opacity=".5" style="mix-blend-mode:multiply"/><path d="M24.975 73c0 39.98 21.228 72.39 47.413 72.39 26.186 0 47.413-32.41 47.413-72.39C119.8 33.023 98.575.613 72.39.613c-26.185 0-47.413 32.41-47.413 72.39z" fill="#248AF0" opacity=".5" style="mix-blend-mode:multiply"/><path d="M22.41 72.435c0 27.443 22.322 49.69 49.857 49.69 27.536 0 49.858-22.247 49.858-49.69 0-27.443-22.322-49.69-49.858-49.69-27.535 0-49.857 22.247-49.857 49.69z" fill="#53556F"/><path d="M42.043 73.913c0 16.658 13.55 30.162 30.263 30.162 16.714 0 30.264-13.504 30.264-30.162S89.02 43.75 72.306 43.75 42.043 57.256 42.043 73.914z" fill="#FFF"/><ellipse fill="#53556F" cx="71.777" cy="73.336" rx="16.086" ry="16.141"/><ellipse fill="#FFF" cx="80.531" cy="63.861" rx="6.523" ry="6.517"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="222 324.6 144.8 144.8" style="enable-background:new 222 324.6 144.8 144.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill:#FF7C56;enable-background:new    ;}
+	.st1{opacity:0.5;fill:#FF4B83;enable-background:new    ;}
+	.st2{opacity:0.5;fill:#23D3C4;enable-background:new    ;}
+	.st3{opacity:0.5;fill:#248AF0;enable-background:new    ;}
+	.st4{fill:#53556F;}
+	.st5{fill:#FFFFFF;}
+</style>
+<title>Symbol</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Symbol">
+		<g id="Group" transform="translate(227.000000, 227.000000)">
+			<ellipse id="Oval-4" class="st0" cx="67.4" cy="170" rx="72.4" ry="47.4"/>
+			<path id="Oval-4_1_" class="st1" d="M100.9,203.5c28.3-28.3,36.2-66.2,17.7-84.7s-56.4-10.6-84.7,17.7s-36.2,66.2-17.7,84.7
+				S72.6,231.8,100.9,203.5L100.9,203.5z"/>
+			<path id="Oval-4_2_" class="st2" d="M33.9,203.5c28.3,28.3,66.2,36.2,84.7,17.7s10.6-56.4-17.7-84.7s-66.2-36.2-84.7-17.7
+				S5.6,175.3,33.9,203.5L33.9,203.5z"/>
+			<path id="Oval-4_3_" class="st3" d="M20,170c0,40,21.2,72.4,47.4,72.4s47.4-32.4,47.4-72.4S93.6,97.6,67.4,97.6S20,130,20,170
+				L20,170z"/>
+			<path id="Oval-3" class="st4" d="M17.4,169.4c0,27.4,22.3,49.7,49.9,49.7s49.9-22.2,49.9-49.7s-22.3-49.7-49.9-49.7
+				S17.4,142,17.4,169.4L17.4,169.4z"/>
+			<path id="Oval-3_1_" class="st5" d="M37,170.9c0,16.7,13.5,30.2,30.3,30.2s30.3-13.5,30.3-30.2S84,140.8,67.3,140.8
+				S37,154.3,37,170.9L37,170.9z"/>
+			<ellipse id="Combined-Shape" class="st4" cx="66.8" cy="170.3" rx="16.1" ry="16.1"/>
+			<ellipse id="Oval-3_2_" class="st5" cx="75.5" cy="160.9" rx="6.5" ry="6.5"/>
+		</g>
+	</g>
+</g>
+</svg>

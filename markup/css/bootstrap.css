@@ -1058,7 +1058,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
-  color: #000;
+  color: #67687f;
   background-color: #f8f8f8; }
 
 input,
@@ -1193,10 +1193,10 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 48px; }
+  font-size: 36px; }
 
 h2, .h2 {
-  font-size: 27px; }
+  font-size: 23px; }
 
 h3, .h3 {
   font-size: 22px; }
@@ -1516,7 +1516,7 @@ pre {
       width: 970px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 600px; } }
+      width: 1600px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -2703,7 +2703,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #404040; }
+  color: #ababbb; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4334,7 +4334,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #000; }
+    color: #67687f; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5813,3 +5813,5 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+/*# sourceMappingURL=bootstrap.css.map */

@@ -7,18 +7,13 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
-	<script src="js/bootstrap.min.js" defer></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/jquery.main.js" defer></script>
 </head>
 	<body>
-	<div id="wrapper">
 		<!-- Start logo block  -->
 		<div class="logo-block">
-			<div class="container">
+			<div class="container-small">
 				<div class="logo">
-					<a href="#"><img src="images/logo.png" alt="Image-description"></a>
+					<a href="#"><img src="images/logo.svg" alt="Image-description"></a>
 				</div>
 				<div class="title-logo">
 					<h1>Vizzzario</h1>
@@ -31,23 +26,27 @@
 		
 		<!-- Start authorization block -->
 		<div class="authorization-block">
-			<div class="container">
+			<div class="container-small">
 				<form class="form-horizontal">
 					<div class="form-group">
-						<label for="inputEmail" class="col-sm-3 control-label">Employee ID / Email</label>
-						<div class="col-sm-6">
-							<input type="email" class="form-control" id="inputEmail" placeholder="Email@example.com">
+						<label for="inputEmail" class="col-sm-3 control-label label-holder">Employee ID / Email</label>
+						<div class="col-sm-6 input-holder">
+							<input type="email" class="form-control" id="inputEmail">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputPassword" class="col-sm-3 control-label">Password</label>
-						<div class="col-sm-6">
-							<input type="password" class="form-control" id="inputPassword" placeholder="********">
+						<label for="inputPassword" class="col-sm-3 control-label label-holder">Password</label>
+						<div class="col-sm-6 input-holder">
+							<input type="password" class="form-control" id="inputPassword">
 						</div>
 					</div>
-					<div class="forgot-create col-sm-6 col-sm-offset-3">
-						<a href="#">Forgot Password</a>
-						<a href="#">Create Account</a>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<ul class="account-list">
+								<li><a href="#">Forgot Password</a></li>
+								<li><a href="#">Create Account</a></li>
+							</ul>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -55,55 +54,57 @@
 
 		<!-- Start Create account block -->
 		<div class="create-account-block">
-			<div class="container">
+			<div class="container-small">
 				<div class="title">
 					<h2>Create Account</h2>
 				</div>
 				<form class="form-horizontal">
 					<div class="form-group">
-						<label for="inputEmail" class="col-sm-3 control-label">Employee ID / Email</label>
-						<div class="col-sm-6">
-							<input type="email" class="form-control" id="inputEmail" placeholder="Email@example.com">
+						<label for="Create:Email" class="col-sm-3 control-label label-holder">Employee ID / Email</label>
+						<div class="col-sm-6 input-holder">
+							<input type="email" class="form-control" id="Create:Email">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputFirstName" class="col-sm-3 control-label">First Name</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control" id="inputName" placeholder="John">
+						<label for="Create:FirstName" class="col-sm-3 control-label label-holder">First Name</label>
+						<div class="col-sm-6 input-holder">
+							<input type="text" class="form-control" id="Create:FirstName">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputLastName" class="col-sm-3 control-label">Last Name</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control" id="inputLastName" placeholder="Smith">
+						<label for="Create:LastName" class="col-sm-3 control-label label-holder">Last Name</label>
+						<div class="col-sm-6 input-holder">
+							<input type="text" class="form-control" id="Create:LastName">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputPassword" class="col-sm-3 control-label">Password</label>
-						<div class="col-sm-6">
-							<input type="password" class="form-control" id="inputPassword3" placeholder="********">
+						<label for="Create:Password" class="col-sm-3 control-label label-holder">Password</label>
+						<div class="col-sm-6 input-holder">
+							<input type="password" class="form-control" id="Create:Password">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputPassword" class="col-sm-3 control-label">Re-type Password</label>
-						<div class="col-sm-6">
-							<input type="password" class="form-control" id="inputPassword3" placeholder="********">
+						<label for="Create:rePassword" class="col-sm-3 control-label label-holder">Re-type Password</label>
+						<div class="col-sm-6 input-holder">
+							<input type="password" class="form-control" id="Create:rePassword">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputEmployer" class="col-sm-3 control-label">Employer</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control" id="inputEmployer">
+						<label for="Create:Employer" class="col-sm-3 control-label label-holder">Employer</label>
+						<div class="col-sm-6 input-holder">
+							<input type="text" class="form-control" id="Create:Employer">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="inputPhone" class="col-sm-3 control-label">Phone</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control" id="inputPhone">
+						<label for="Create:Phone" class="col-sm-3 control-label label-holder">Phone</label>
+						<div class="col-sm-6 input-holder">
+							<input type="tel" class="form-control" id="Create:Phone">
 						</div>
 					</div>
-					<div class="col-sm-6 col-sm-offset-3">
-						<button type="button" class="btn btn-primary">verify</button>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 btn-create">
+							<button type="button" class="btn btn-primary btn-block">Create account</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -111,38 +112,46 @@
 
 		<!-- Start Verify Account block -->
 		<div class="verify-account-block">
-			<div class="container">
+			<div class="container-small">
 				<div class="block text-center">
 					<div class="title">
 						<h2>Verify Your Account</h2>
 					</div>
-					<p>An email has been sent to example@email.com. Please check you inbox.</p>
-					<p>To activate, please click on the link in the email.</p>
-					<div class="btn-box col-sm-12">
-						<button type="button" class="btn btn-primary">resend activation</button>
-						<button type="button" class="btn btn-default">cancel</button>
+					<div class="text-block">
+						<p>An email has been sent to example@email.com. Please check you inbox.</p>
+						<p>To activate, please click on the link in the email.</p>
+					</div>
+					<div class="row">
+						<div class="btn-box">
+							<div class="col-sm-6"><button type="button" class="btn btn-primary btn-block">resend activation</button></div>
+							<div class="col-sm-6"><button type="button" class="btn btn-default btn-block">cancel</button></div>
+						</div>
 					</div>
 				</div>
-				<div class="block text-left">
+				<div class="block-alt text-left">
 					<div class="title">
 						<h2>2-Step Verification</h2>
 					</div>
-					<p>A text message with your verification code has been sent to (123) 456-7890</p>
+					<div class="text-block">
+						<p>A text message with your verification code has been sent to (123) 456-7890</p>
+					</div>
 					<form class="form-horizontal">
 						<div class="form-group">
-							<label for="inputCode" class="col-sm-3 control-label">Verification Code</label>
+							<label for="inputCode" class="col-sm-3 control-label label-holder">Verification Code</label>
 							<div class="col-sm-6">
-								<input type="text" class="form-control" id="inputCode" placeholder="ABC123">
+								<input type="text" class="form-control input-holder" id="inputCode">
 							</div>
 						</div>
-						<div class="col-sm-6 col-sm-offset-3">
-							<button type="button" class="btn btn-primary">verify</button>
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3 btn-verify">
+								<button type="button" class="btn btn-primary">verify</button>
+							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-3 col-sm-6">
 								<div class="checkbox">
 									<label>
-										<input type="checkbox"> Don't ask for codes again on this computer.
+										<input type="checkbox" class="input-holder"> Don't ask for codes again on this computer.
 									</label>
 								</div>
 							</div>
@@ -151,8 +160,6 @@
 				</div>
 			</div>
 		</div>
-
-	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

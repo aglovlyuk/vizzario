@@ -388,7 +388,7 @@ var PathConfig = require('./grunt-settings.js');
   //css beautiful
   grunt.registerTask('cssbeauty', ['sass:dist', 'cmq:dist', 'postcss:dist', 'csscomb:dist']);
   //img minify
-  grunt.registerTask('imgmin', ['imagemin', 'pngmin:all', 'svgmin']);
+  grunt.registerTask('imgmin', ['imagemin', 'pngmin:all']);
 
   //final build
   grunt.registerTask('dist', ['clean:temp', 'imgmin', 'cssbeauty']);
