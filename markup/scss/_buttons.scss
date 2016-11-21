@@ -24,14 +24,16 @@
 		color: #fff;
 	}
 }
-.btn-sidebar-blue {
+.btn-blue {
 	background: $blue;
+	padding: 8px 6px;
 	&:hover {
 		background: #1e8cf9;
 		color: #fff;
 	}
 }
-.btn-sidebar-grey {
+.btn-grey {
+	padding: 8px 12px;
 	color: #bcbec0;
 	background: #f8f8f8;
 	&:hover {
